@@ -52,10 +52,6 @@ export class FacebookController {
       );
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-    if (!this.facebookService.verifySignature(signature, payload)) {
-      // throw new HttpException('Invalid signature', HttpStatus.FORBIDDEN);
-    }
 
     this.facebookService.processEvent(body);
     return 'EVENT_RECEIVED';

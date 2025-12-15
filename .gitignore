@@ -37,4 +37,7 @@ lerna-debug.log*
 
 # NestJS
 /dist/
-demo_script.md
+
+
+app.log
+app.pid
